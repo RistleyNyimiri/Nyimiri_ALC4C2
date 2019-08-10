@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Nyimiri_ALC4C2</string>
+    <string name="title_hint">Title</string>
+    <string name="price_hint">Price (numbers only)</string>
+    <string name="description_hint">description_hint</string>
+    <string name="hint_title">Deal Title</string>
+    <string name="enter_price_number">Enter Price(Number)</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="save_menu">save</string>
+    <string name="delete_deal">Delete Deal</string>
+</resources>

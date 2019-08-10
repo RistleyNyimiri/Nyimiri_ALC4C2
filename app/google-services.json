@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "553879057535",
+    "firebase_url": "https://nyimiri-alc4c2-9569c.firebaseio.com",
+    "project_id": "nyimiri-alc4c2-9569c",
+    "storage_bucket": "nyimiri-alc4c2-9569c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553879057535:android:4c42a5e617fc26ce",
+        "android_client_info": {
+          "package_name": "com.example.nyimiri_alc4c2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553879057535-qj1rn37d4ivge5i19ccsuufg6tcpgmsl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nyimiri_alc4c2",
+            "certificate_hash": "4b0f3ba2bcabe53bd906c6da6bc92d33e97d0db4"
+          }
+        },
+        {
+          "client_id": "553879057535-dgrs0tnk2m215javein4rg8q6h3hv7v3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlCHFA8WL14brQEnaVd-Jp5ZF9rkMD5_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553879057535-dgrs0tnk2m215javein4rg8q6h3hv7v3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

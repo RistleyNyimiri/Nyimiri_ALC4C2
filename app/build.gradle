@@ -31,7 +31,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:18.1.1'//Firebase Storage
     implementation 'com.squareup.picasso:picasso:2.71828'//picasso
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'//AuthUI
+    implementation 'com.google.firebase:firebase-auth:18.1.0'
+    implementation 'com.firebaseui:firebase-ui-auth:5.0.0'//AuthUI
 }
 
 apply plugin: 'com.google.gms.google-services'

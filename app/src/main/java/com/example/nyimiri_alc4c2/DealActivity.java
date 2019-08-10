@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.StorageReference;
@@ -115,7 +116,12 @@ public class DealActivity extends AppCompatActivity {
             ref.putFile(imageUri).addOnSuccessListener(this, new OnSuccessListener<UploadTask.TaskSnapshot>(){
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot){
-                    String url = taskSnapshot.getDownloadUrl().toString();
+
+                    Task<Uri> urlTask = taskSnapshot.getStorage().getDownloadUrl();
+                    while
+                    (!urlTask.isSuccessful()) ;
+                    Uri downloadUrl = urlTask.getResult();
+                    String url = downloadUrl.toString().trim();
                     String pictureName = taskSnapshot.getStorage().getPath();
                     deal.setImageUrl(url);
                     deal.setImageName(pictureName);
@@ -178,7 +184,7 @@ public class DealActivity extends AppCompatActivity {
     private void showImage(String url){
         if(url != null && url.isEmpty() == false){
             int width = Resources.getSystem().getDisplayMetrics().widthPixels;
-            Picasso.with(this)
+            Picasso.get()
                    .load(url)
                    .resize(width, width*2/3)
                    .centerCrop()

@@ -81,12 +81,10 @@ public class ListActivity extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
         FirebaseUtil.openFbReference("traveldeals", this);
-        RecyclerView rvDeals = (RecyclerView) findViewById(R.id.rvDeals);
+        RecyclerView rvDeals =  findViewById(R.id.rvDeals);
         final DealAdapter adapter = new DealAdapter();
+        rvDeals.setLayoutManager(new LinearLayoutManager(this));
         rvDeals.setAdapter(adapter);
-        LinearLayoutManager dealsLayoutManager =
-                new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        rvDeals.setLayoutManager(dealsLayoutManager);
         FirebaseUtil.attachListener();
     }
 
